@@ -5,13 +5,13 @@ If you don't have a *_plugins* folder within your site, you'll need to create on
 # Date Tools
 DateTools simplifies date formatting.
 
-## Installation
+### Installation
 1. Install "facets"  
 `gem install facets`
 
 2. Place **date_tools.rb** in the *_plugins* folder, within your site. Create this folder if it doesn't exist.
 
-## Usage
+### Usage
 22nd May 2014  
 `{{ page.date | pretty_date }}`
 
@@ -32,10 +32,10 @@ Thu
 Indentation helps you keep your source code nicely formatted. When writing HTML, you tend to keep tags nested nicely in levels.  
 But moving these files to a templating language, such as for us in Jekyll, often causes the nesting to become inconsistent.
 Indentation fixes this, by allowing you to specify an indentation level on an include/tag.
-## Installation
+### Installation
 Place **indent_markup.rb** in the *_plugins* folder, within your site. Create this folder if it doesn't exist.
 
-## Usage	
+### Usage	
 There are two convince methods, `indent_tab` and `indent_space`, depending on your indenting preferences.  
 In this example, we indent by 1 tab ("		").  
 `{{ content | indent_tab: 1 }}`
@@ -54,10 +54,10 @@ This is because usually the tag has been indented to the correct level, and the 
 Source control, such as GIT, will complain if you don't have a new line at the end of your file. With Jekyll this can cause an unnecessary blank line in your source code.  
 *clean_markup.rb* adds a few methods to remove whitespace.
 
-## Installation
+### Installation
 Place **clean_markup.rb** in the *_plugins* folder, within your site. Create this folder if it doesn't exist.
 
-## Usage	
+### Usage	
 Remove leading whitespace " test " becomes "test "  
 `{{ content | trim_leading_whitespace }}`
 
